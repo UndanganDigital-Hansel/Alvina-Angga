@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, Suspense } from "react";
 import { AnimatePresence } from "framer-motion";
 import CoverScreen from "@/components/CoverScreen";
 import HomeSection from "@/components/HomeSection";
@@ -17,12 +17,16 @@ export default function InvitationPage() {
   return (
     <>
       <AnimatePresence>
-        {!opened && <CoverScreen key="cover" onOpen={() => setOpened(true)} />}
+        {!opened && (
+          <Suspense fallback={<div className="text-center p-10 text-gray-500">Loading...</div>}>
+            <CoverScreen key="cover" onOpen={() => setOpened(true)} />
+          </Suspense>
+        )}
       </AnimatePresence>
 
       {opened && (
-        <main className=" bg-white">
-          <div className=" mx-auto">
+        <main className="bg-white">
+          <div className="mx-auto">
             <HomeSection />
             <BrideSection />
             <WeddingDate />
