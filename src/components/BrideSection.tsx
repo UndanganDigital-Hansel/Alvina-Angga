@@ -3,9 +3,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { container, item, zoomItem } from "@/lib/motionVariants";
-import { Card } from "./ui/card";
-import { Ampersand } from "lucide-react";
-import { div } from "framer-motion/client";
 
 export default function BrideSection() {
   return (
@@ -133,3 +130,4 @@ export default function BrideSection() {
     </div>
   );
 }
+
