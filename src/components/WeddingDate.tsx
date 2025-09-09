@@ -23,7 +23,7 @@ export default function WeddingDate() {
           className="text-2xl font-bold font-serif text-white"
           variants={item}
         >
-          Allah Subhanahu Wa Ta'ala berfirman
+          Allah Subhanahu Wa Ta&apos;ala berfirman
         </motion.h1>
 
         <motion.div className="p-5" variants={item}>
@@ -38,8 +38,13 @@ export default function WeddingDate() {
               >
                 <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
               </svg>
-              <p>"Dan segala sesuatu Kami ciptakan berpasang-pasangan agar kamu mengingat (kebesaran Allah)."</p>
-              <h5 className="my-5 text-primary text-center">QS. Adh-Dhariyat: 49</h5>
+              <p>
+                &quot;Dan segala sesuatu Kami ciptakan berpasang-pasangan agar
+                kamu mengingat (kebesaran Allah).&quot;
+              </p>
+              <h5 className="my-5 text-primary text-center">
+                QS. Adh-Dhariyat: 49
+              </h5>
             </blockquote>
           </Card>
         </motion.div>
@@ -56,8 +61,13 @@ export default function WeddingDate() {
               >
                 <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
               </svg>
-              <p>"dan sesungguhnya Dialah yang menciptakan pasangan laki-laki dan perempuan"</p>
-              <h5 className="my-5 text-primary text-center">QS. An-Najm: 45</h5>
+              <p>
+                &quot;dan sesungguhnya Dialah yang menciptakan pasangan laki-laki
+                dan perempuan&quot;
+              </p>
+              <h5 className="my-5 text-primary text-center">
+                QS. An-Najm: 45
+              </h5>
             </blockquote>
           </Card>
         </motion.div>
@@ -80,14 +90,17 @@ export default function WeddingDate() {
         {/* Konten */}
         <div className="relative z-10 text-center px-4 md:px-10 py-16 md:py-24 text-white w-full max-w-3xl mx-auto">
           <motion.h2 className="text-2xl md:text-4xl font-bold mb-6 font-serif">
-            Waktu & Tempat
+            Waktu &amp; Tempat
           </motion.h2>
 
           <motion.div variants={zoomItem}>
             <Countdown eventDate="2025-09-24T00:00:00" />
           </motion.div>
 
-          <motion.div className="mt-6 md:mt-10 space-y-6 text-sm md:text-base" variants={container}>
+          <motion.div
+            className="mt-6 md:mt-10 space-y-6 text-sm md:text-base"
+            variants={container}
+          >
             <motion.div variants={zoomItem}>
               <h3 className="text-lg md:text-xl font-semibold">Akad Nikah</h3>
               <p>Kamis, 24 September 2025 - 09.00 WIB</p>
