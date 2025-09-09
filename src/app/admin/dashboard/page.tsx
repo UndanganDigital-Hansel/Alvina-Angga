@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { supabase } from "@/lib/supabaseClient";
 
@@ -21,8 +21,16 @@ import {
 } from "@/components/ui/pagination";
 import { Button } from "@/components/ui/button";
 
+interface RSVP {
+  id: number;
+  nama: string;
+  hadir: boolean;
+  pesan: string | null;
+  created_at: string;
+}
+
 export default function AdminDashboard() {
-  const [rsvpList, setRsvpList] = useState<any[]>([]);
+  const [rsvpList, setRsvpList] = useState<RSVP[]>([]);
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(1);
   const perPage = 5;
@@ -31,7 +39,7 @@ export default function AdminDashboard() {
   const totalPages = Math.ceil(rsvpList.length / perPage);
   const paginated = rsvpList.slice((page - 1) * perPage, page * perPage);
 
-  const fetchData = async () => {
+  const fetchData = useCallback(async () => {
     const {
       data: { user },
     } = await supabase.auth.getUser();
@@ -47,11 +55,11 @@ export default function AdminDashboard() {
 
     if (!error) setRsvpList(data || []);
     setLoading(false);
-  };
+  }, [router]);
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [fetchData]);
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
