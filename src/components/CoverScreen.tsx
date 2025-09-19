@@ -26,7 +26,7 @@ export default function CoverScreen({ onOpen }: CoverScreenProps) {
       animate={{ y: 0 }}
       exit={{ y: "-100%" }}
       transition={{ duration: 1, ease: "easeInOut" }}
-      className="fixed inset-0 z-50 flex flex-col items-center justify-center text-center px-6 overflow-hidden"
+      className="fixed inset-0 z-50 flex flex-col items-center  text-center px-6 overflow-hidden"
     >
       {/* Background blur + grayscale */}
       <div
@@ -45,19 +45,19 @@ export default function CoverScreen({ onOpen }: CoverScreenProps) {
         <div className="p-10">
           <motion.img
             src="/images/the wedding.png"
-            className="w-72 h-auto mx-auto"
+            className="w-60 h-auto mx-auto"
             variants={item}
           />
           <motion.img
             src="/images/wayang gold.png"
             variants={zoomItem}
             alt="Couple"
-            className="object-cover my-8 w-72 h-auto mx-auto"
+            className="object-cover my-8 w-60 h-auto mx-auto"
           />
           <motion.img
             src="/images/name cover.png"
             variants={item}
-            className="w-72 h-auto mx-auto"
+            className="w-60 h-auto mx-auto"
           />
 
           {/* Tambahan: Nama tamu */}
@@ -82,3 +82,4 @@ export default function CoverScreen({ onOpen }: CoverScreenProps) {
     </motion.div>
   );
 }
+
