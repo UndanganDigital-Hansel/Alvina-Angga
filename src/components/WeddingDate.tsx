@@ -94,7 +94,7 @@ export default function WeddingDate() {
           </motion.h2>
 
           <motion.div variants={zoomItem}>
-            <Countdown eventDate="2025-09-24T00:00:00" />
+            <Countdown eventDate="2025-09-25T12:00:00" />
           </motion.div>
 
           <motion.div
@@ -124,5 +124,6 @@ export default function WeddingDate() {
     </motion.section>
   );
 }
+
 
 
