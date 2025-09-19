@@ -34,7 +34,7 @@ export default function HomeSection() {
 
         <motion.img
           className="p-7 w-100 md:w-150 h-auto mx-auto"
-          src="/images/name cover.png"
+          src="/images/NameCover.png"
           alt="Name Cover"
           variants={item}
         />
@@ -61,3 +61,4 @@ export default function HomeSection() {
     </motion.section>
   );
 }
+
