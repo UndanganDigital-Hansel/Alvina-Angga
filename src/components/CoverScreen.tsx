@@ -55,7 +55,7 @@ export default function CoverScreen({ onOpen }: CoverScreenProps) {
             className="object-cover my-8 w-60 h-auto mx-auto"
           />
           <motion.img
-            src="/images/name cover.png"
+            src="/images/NameCover.png"
             variants={item}
             className="w-60 h-auto mx-auto"
           />
@@ -82,4 +82,5 @@ export default function CoverScreen({ onOpen }: CoverScreenProps) {
     </motion.div>
   );
 }
+
 
