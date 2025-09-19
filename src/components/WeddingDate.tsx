@@ -113,7 +113,7 @@ export default function WeddingDate() {
           <motion.div className="flex justify-center mt-10">
             <Button
               type="button"
-              onClick={() => (window.location.href = "https://maps.app.goo.gl/LWbFtbvwAerrGwwZ8")}
+              onClick={() => (window.location.href = "https://goo.gl/maps/FFaJtGXF5gNSNYKk6?g_st=aw")}
               className="px-6 md:px-8 py-3 md:py-4 rounded-full flex items-center gap-2 bg-primary hover:bg-primary text-white border border-primary"
             >
               <MapPin /> Location
@@ -124,4 +124,5 @@ export default function WeddingDate() {
     </motion.section>
   );
 }
+
 
