@@ -102,22 +102,18 @@ export default function WeddingDate() {
             variants={container}
           >
             <motion.div variants={zoomItem}>
-              <h3 className="text-lg md:text-xl font-semibold">Akad Nikah</h3>
-              <p>Kamis, 24 September 2025 - 09.00 WIB</p>
-              <p>Masjid Agung</p>
+              <h3 className="text-lg md:text-xl font-semibold">Ngunduh Mantu</h3>
+              <p>Kamis, 25 September 2025 - 12.00 WIB - Selesai</p>
+              <p>Jl. Binangun II no.25 Genengan Pakisaji Kab.Malang</p>
             </motion.div>
 
-            <motion.div variants={zoomItem}>
-              <h3 className="text-lg md:text-xl font-semibold">Resepsi</h3>
-              <p>Kamis, 24 September 2025 - 13.00 WIB</p>
-              <p>Gedung Serbaguna</p>
-            </motion.div>
+            
           </motion.div>
 
           <motion.div className="flex justify-center mt-10">
             <Button
               type="button"
-              onClick={() => (window.location.href = "https://example.com")}
+              onClick={() => (window.location.href = "https://maps.app.goo.gl/LWbFtbvwAerrGwwZ8")}
               className="px-6 md:px-8 py-3 md:py-4 rounded-full flex items-center gap-2 bg-primary hover:bg-primary text-white border border-primary"
             >
               <MapPin /> Location
@@ -128,3 +124,4 @@ export default function WeddingDate() {
     </motion.section>
   );
 }
+
